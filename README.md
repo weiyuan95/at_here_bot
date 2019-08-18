@@ -1,1 +1,1 @@
-wip
+Abandoned till Telegram updates their bot API to be able to get all chat members ):

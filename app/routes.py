@@ -14,5 +14,5 @@ def bot_test():
 
 @app.route(f'/{os.getenv("HOOK_SECRET")}', methods=['GET', 'POST'])
 def get_updates():
-    logging.info(f'{request.json}\n\n')
+    logging.info(f'{request.json}')
     return f'{request.json}'

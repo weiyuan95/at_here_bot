@@ -12,7 +12,7 @@ def index():
 def bot_test():
     return HereBot.auth_check()
 
-@app.route(f'/{os.getenv("HOOK_SECRET")}')
+@app.route(f'/{os.getenv("HOOK_SECRET")}', methods=['GET', 'POST'])
 def get_updates():
     logging.info(f'{request.json}\n\n')
     return f'{request.json}'
